@@ -1,10 +1,17 @@
 import React from "react";
 import { styled } from "@mui/system";
+import { Button } from "@mui/material";
+
+const MyButton = styled(Button)({
+  background: "pink",
+  border: "red 1px solid",
+});
 
 const MyList = styled("li")({
   color: "pink",
   background: "black",
 });
+
 function Nav() {
   return (
     <>
@@ -13,6 +20,7 @@ function Nav() {
         <MyList>css</MyList>
         <MyList>js</MyList>
       </ol>
+      <MyButton>버튼</MyButton>
     </>
   );
 }
