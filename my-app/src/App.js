@@ -10,10 +10,7 @@ import ButtonGroup from "@mui/material/ButtonGroup";
 import { Container, Grid } from "@mui/material";
 
 function App() {
-  const [value, setValue] = useState(30);
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+
   return (
     <div className="App">
       <Container fixed>

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Alert } from "@mui/material";
 
 function Article() {
   return (
@@ -10,6 +11,7 @@ function Article() {
       Eaque non adipisci quia aperiam laboriosam tempore quo officiis fuga totam
       quasi? Ad architecto molestiae magnam facilis minima porro, doloremque
       itaque odit!
+      <Alert>hello</Alert>
     </div>
   );
 }
