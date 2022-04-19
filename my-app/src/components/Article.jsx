@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Alert } from "@mui/material";
+import { Alert, Button, IconButton, Snackbar } from "@mui/material";
 
 function Article() {
+  const [open, setOpen] = useState(true);
   return (
     <div>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
@@ -12,6 +13,28 @@ function Article() {
       quasi? Ad architecto molestiae magnam facilis minima porro, doloremque
       itaque odit!
       <Alert>hello</Alert>
+      <Snackbar
+        open={open}
+        autoHideDuration={6000}
+        onClose={() => {
+          setOpen(false);
+        }}
+        message="Note archived"
+        action={
+          <>
+            <Button
+              size="small"
+              aria-label="close"
+              color="inherit"
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              X
+            </Button>
+          </>
+        }
+      />
     </div>
   );
 }
