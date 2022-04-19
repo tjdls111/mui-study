@@ -1,9 +1,13 @@
-import * as React from "react";
-import ReactDOM from "react-dom";
+import logo from "./logo.svg";
 import Button from "@mui/material/Button";
+import "./App.css";
 
 function App() {
-  return <Button variant="contained">Hello World</Button>;
+  return (
+    <div className="App">
+      <Button variant="contained">Hello World</Button>;
+    </div>
+  );
 }
 
-ReactDOM.render(<App />, document.querySelector("#app"));
+export default App;
