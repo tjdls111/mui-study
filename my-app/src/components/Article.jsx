@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Alert, Button, IconButton, Snackbar } from "@mui/material";
-
 function Article() {
   const [open, setOpen] = useState(true);
   return (
