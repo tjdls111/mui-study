@@ -1,13 +1,21 @@
 import { createTheme } from "@mui/material";
+import { orange } from "@mui/material/colors";
 
+// const theme = createTheme({
+//   palette: {
+//     light: {
+//       fontColor: "black",
+//       bgColor: "white",
+//     },
+//     dark: {
+//       fontColor: "white",
+//       bgColor: "black",
+//     },
+//   },
+// });
 const theme = createTheme({
-  light: {
-    fontColor: "black",
-    bgColor: "white",
-  },
-  dark: {
-    fontColor: "white",
-    bgColor: "black",
+  status: {
+    danger: orange[500],
   },
 });
 

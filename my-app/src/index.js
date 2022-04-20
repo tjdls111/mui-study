@@ -4,7 +4,14 @@ import "./index.css";
 import App from "./App";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@emotion/react";
-import { theme } from "./theme";
+import { createTheme } from "@mui/material";
+import { orange } from "@mui/material/colors";
+
+const theme = createTheme({
+  status: {
+    danger: orange[500],
+  },
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
