@@ -7,6 +7,8 @@ const MyButton = styled(Button)({
   border: "red 1px solid",
 });
 
+const CustomButton = styled("button")({});
+
 const MyList = styled("li")({
   color: "pink",
   background: "black",
@@ -24,6 +26,9 @@ function Nav() {
       <Button sx={{ background: "pink", border: "red 1px solid" }}>
         버튼2
       </Button>
+      <CustomButton sx={{ background: "pink", border: "red 1px solid" }}>
+        버튼3
+      </CustomButton>
     </>
   );
 }
