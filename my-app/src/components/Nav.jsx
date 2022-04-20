@@ -21,6 +21,9 @@ function Nav() {
         <MyList>js</MyList>
       </ol>
       <MyButton>버튼</MyButton>
+      <Button sx={{ background: "pink", border: "red 1px solid" }}>
+        버튼2
+      </Button>
     </>
   );
 }

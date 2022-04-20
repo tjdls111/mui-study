@@ -7,10 +7,9 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Article from "./components/Article";
 import ButtonGroup from "@mui/material/ButtonGroup";
-import { Container, Grid } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 
 function App() {
-
   return (
     <div className="App">
       <Container fixed>
